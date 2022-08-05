@@ -1,0 +1,279 @@
+html,
+body {
+  /*min-height: 100%;*/
+  min-height: 100vh;
+  background: linear-gradient(to right, rgba(8, 7, 41, 0.7), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(8, 7, 41, 0.7)), url("../assets/img/bg-portal.jpg") fixed center center;
+  background-size: cover;
+}
+@media(max-width: 576px){
+  .row > * {
+    /*width: 50%;*/
+  }
+}
+.section-heading{
+    color: #fff;
+    font-weight: bold;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /*padding-top: 30px;*/
+    padding: 10px 20px;
+}
+.kat{
+    padding-top: 20px;
+    /*margin-bottom: 50px;*/
+}
+.headers {
+  /*background: rgba(0, 0, 0, 0.6);*/
+  background: url("../assets/img/bg-logo-header.jpg");
+  background-size: contain;
+
+}
+a.icon{
+    color: #fff;
+    float: right;
+    padding: 0 5px;
+    display: block;
+}
+a.icon:hover{
+    background: rgba(16, 41, 105,1);
+}
+hr {
+  border: solid 2px white;
+  margin: 0;
+  padding: 0px 20px;
+  border-radius: 5px;
+  opacity: inherit;
+}
+.logo-header{
+    max-width: 50%;
+}
+@media(max-width: 1200px){
+    .logo-header{
+        max-width: 70%;
+    }
+}
+@media(max-width: 992px){
+    .logo-header{
+        max-width: 100%;
+    }
+}
+#mainNav {
+    background: transparent;
+    padding: 10px 20px;
+}
+#mainNav.scrolled {
+    background: #4ca666;
+    box-shadow: 0px 5px 10px rgba(76, 166, 102, 0.45);
+    transition: all 0.5s;
+}
+.saran{
+    /*background: #4c5aa6;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;*/
+}
+#mainNav .navbar-nav .nav-item .nav-link{
+    font-size: .8rem;
+}
+section{
+
+}
+.page-section {
+    
+}
+.page-section h3{
+    margin-bottom: 20px;
+}
+.page-section h2{
+    font-size: 2rem;
+}
+.page-section p{
+    margin-top: 20px;
+}
+.btn.btn-primary{
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+    background: #4ca666;
+    border: none;
+    border-radius: 10px;
+    box-shadow:  0px 0px 20px rgba(76, 166, 102, 0.8);
+}
+.btn.btn-primary:hover .fa-arrow-right{
+    margin-left: 5px;
+    transition: all 0.1s ease-in-out;
+}
+#home{
+    /*background: rgba(255,255,255, .1);*/
+}
+#portfolio{
+    width: 100%;
+    background-size: auto;
+    padding: 0;
+}
+ul#portfolio-flters{
+    display: block;
+    margin:0;
+    list-style-type: none;
+    padding: 10px 20px;
+}
+
+#portfolio-flters li {
+    background: white;
+    margin: 5px auto 25px auto;
+    border-radius: 5px;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: .8em;
+    font-weight: 500;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    transition: all 0.1s ease-in-out;
+    font-family:  "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+#portfolio-flters .filter-active{
+    background: #4ca666;
+    color: white;
+  }
+#portfolio-flters li:hover {
+    background: #4ca666;
+    color: white;
+}
+#portfolio .portfolio-item{
+    margin-left: unset;
+    margin-right: unset;
+    max-width: 20%;
+    margin-top: 10px;
+    padding: 25px;
+}
+
+#portfolio .portfolio-item .portfolio-caption{
+    padding: 8px;
+    background: rgba(255,255,255,0);
+}
+#portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+    font-size: 1em;
+    color: #fff;
+
+    display: none;
+}
+#portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
+    font-size: .8em;
+    color: #aaa;
+}
+.popover{
+  background: rgba(0,0,0,0);
+  border: rgba(0,0,0,0);
+  z-index: 900;
+}
+.popover .popover-arrow{
+  display: none;
+}
+.popover .popover-body{
+  background: #3edaea;
+  border-radius: 10px;
+  max-width: 180px;
+  text-align: center;
+  color: #262626;
+  font-size: .8em;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+@media(max-width: 768px)/* or (orientation: portrait)*/{
+    .sticky-top{
+      position: inherit;
+    }
+
+    #mainNav {
+        background: #4ca666;
+    }
+    nav a {
+        color: #fff;
+    }
+    #home{
+        text-align: center;
+    }
+    .page-section h2{
+        font-size: 1.5rem;
+    }
+    .headers{
+        display: none;
+    }
+    ul#portfolio-flters.active{
+        display: block;
+    }
+    #portfolio #portfolio-flters li{
+      font-size: .7em;
+      padding: 8px 10px;
+    }
+    #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+        font-size: .6em;
+    }
+    #portfolio .portfolio-item{
+        max-width: 25%;
+        padding: 12px;
+    }
+    .popover .popover-body{
+        max-width: 150px;
+        font-size: .8em;
+    }
+}
+.info-bt{
+  color: #fff;
+  font-size: 1.5em;
+}
+.info-bt:hover{
+  color: rgba(6, 222, 245, 0.7);
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    background: rgba(255,255,255, 0.4);
+}
+.portfolio-link .img-fluid, .portfolio-link .portfolio-hover{
+    border-radius: 20px;
+  }
+.portfolio-link .portfolio-hover{
+    box-shadow: 0px 0px 10px white;
+}
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 20px;
+  bottom: 20px;
+  z-index: 996;
+  background: #cc1616;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  transition: all 0.4s;
+  border-radius: 50%
+}
+.back-to-top i {
+  font-size: 6em;
+  line-height: 0;
+}
+.back-to-top:hover {
+  background: #e72323;
+  color: #fff;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+.survey {
+  background: #a416cc;
+  color: #fff;
+  font-size: .8em;
+}
+.survey i {
+  font-size: 6em
+  line-height: 0;
+}
+.survey:hover {
+  background: #3edaea;
+  color: #fff;
+}
+.footer{
+    bottom: 0;
+    color: #fff;
+}
