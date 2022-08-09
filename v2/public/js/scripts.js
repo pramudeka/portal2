@@ -18,8 +18,8 @@
     })
 
     setTimeout(function() {
-      var popoverTriggerList = [].slice.call(document.querySelectorAll('.info-bt'))
-      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      let popoverTriggerList = [].slice.call(document.querySelectorAll('.info-bt'))
+      let popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
         return new bootstrap.Popover(popoverTriggerEl,{
           trigger: 'focus',
           placement: 'top',
@@ -29,14 +29,14 @@
     },1000);
 
     $('#portfolio-flters li').on( 'click', function() {
-      var filterValue = $( this ).data('filter');
+      let filterValue = $( this ).data('filter');
       $('#portfolio-flters li').removeClass('filter-active');
       $( this ).addClass('filter-active');
 
       $('.item-list .portfolio-item').each( function( i, buttonGroup ) {
-          var $buttonGroup = $( buttonGroup );
+          let $buttonGroup = $( buttonGroup );
           $buttonGroup.hide()
-          var have=$buttonGroup.hasClass(filterValue)
+          let have=$buttonGroup.hasClass(filterValue)
           if (have || filterValue=='all') {
             $buttonGroup.fadeIn(500)
           }else{
@@ -46,12 +46,18 @@
         });
     });
     
-    $(this).scroll(function () {
-      if ($(this).scrollTop()>20) {
+    function scrollNav() {
+      if ($(this).scrollTop()>40) {
         $('#mainNav').addClass('scrolled')
       }else{
         $('#mainNav').removeClass('scrolled')
       }
+    }
+
+    scrollNav()
+
+    $(this).scroll(function () {
+      scrollNav()
 
       if ($(this).scrollTop()>200) {
         $('.back-to-top').addClass('active').fadeIn('slow')
@@ -63,4 +69,20 @@
     $('.back-to-top').on('click',function(){
       $(this).scrollTop(0)
     })
+
+    $('#modal-detail').on('shown.bs.modal', function (event) {
+      let button = $(event.relatedTarget); // Button that triggered the modal
+      let id = button.attr('id'); 
+      let desc = $('#'+id+' img').attr('alt').split(' | ')
+      $('.modal-body h5').text(desc[0])
+      $('.modal-body p').text(desc[1])
+      $('.btn-go').attr('href',button.attr('href'))
+    });
+
+    $('#modal-detail').on('hidden.bs.modal', function (event) {
+      $('.modal-body h5').text('')
+      $('.modal-body p').text('')
+      $('.btn-go').attr('href','javascript:void(0);')
+    });
+
   })

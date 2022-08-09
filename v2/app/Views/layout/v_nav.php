@@ -1,6 +1,6 @@
     <body id="page-top" class=" d-flex  flex-column">
         <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
-                <a class="navbar-brand" href=""><img src="assets/img/navbar-logo.svg" alt="..."></a>
+                <a class="navbar-brand" href="<?=base_url('/')?>"><img src="<?=base_url('public/')?>/assets/img/logo-nav.svg" alt="..."></a>
                 <a class="navbar-toggler" href="javascript:void(0);" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </a>
@@ -13,7 +13,7 @@
                         <li class="nav-item"><a class="nav-link" href="<?=base_url('lapor')?>">Konsultasi</a></li>
                         <li class="nav-item"><a class="nav-link" href="<?=base_url('lapor')?>">Pengaduan</a></li>
                         <li class="nav-item"><a class="nav-link" href="<?=base_url('faq')?>">FAQ</a></li>
-                        <li class="nav-item saran"><a class="nav-link" href="https://forms.gle/KffbGtNErNEv9tvN8"><i class="fa-solid fa-comment-dots"></i> Saran</a></li>
+                        <li class="nav-item"><a class="nav-link saran" style="" href="https://forms.gle/KffbGtNErNEv9tvN8"><i class="fa-solid fa-comment-dots"></i> Saran</a></li>
                     </ul>
                 </div>
         </nav>

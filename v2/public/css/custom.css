@@ -2,7 +2,7 @@ html,
 body {
   /*min-height: 100%;*/
   min-height: 100vh;
-  background: linear-gradient(to right, rgba(8, 7, 41, 0.7), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(8, 7, 41, 0.7)), url("../assets/img/bg-portal.jpg") fixed center center;
+  background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.4)), url("../assets/img/bg-portal.jpg") fixed center top;
   background-size: cover;
 }
 @media(max-width: 576px){
@@ -16,6 +16,11 @@ body {
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     /*padding-top: 30px;*/
     padding: 10px 20px;
+}
+
+.page-section .quote h3.section-subheading{
+  color: #aaa;
+  margin-top: 2rem;
 }
 .kat{
     padding-top: 20px;
@@ -57,22 +62,29 @@ hr {
     }
 }
 #mainNav {
-    background: transparent;
     padding: 10px 20px;
 }
 #mainNav.scrolled {
-    background: #4ca666;
+    background: var(--blitar-green);
     box-shadow: 0px 5px 10px rgba(76, 166, 102, 0.45);
     transition: all 0.5s;
 }
-.saran{
-    /*background: #4c5aa6;
-    border-radius: 10px;
-    padding-left: 10px;
-    padding-right: 10px;*/
+#mainNav .navbar-nav .nav-item a.nav-link.saran{
+    color: var(--bs-purple);
+    padding-right: 10px;
 }
 #mainNav .navbar-nav .nav-item .nav-link{
     font-size: .8rem;
+    color: #fff;
+    font-weight: bold;
+}
+#mainNav .navbar-nav .nav-item .nav-link{
+    font-size: .8rem;
+    color: #fff;
+    font-weight: bold;
+}
+#mainNav .navbar-brand img{
+    height: 3rem;
 }
 section{
 
@@ -91,10 +103,21 @@ section{
 }
 .btn.btn-primary{
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
-    background: #4ca666;
+    background: var(--blitar-green);
     border: none;
-    border-radius: 10px;
-    box-shadow:  0px 0px 20px rgba(76, 166, 102, 0.8);
+    border-radius: 5px;
+}
+.btn.btn-primary.home{
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+    background: #00000088;
+    border: solid 2px var(--bs-primary);
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.btn.btn-primary:hover{
+  background: var(--blitar-green);
+  border: solid 2px var(--blitar-green);
+  box-shadow:  0px 0px 20px rgba(var(--blitar-green-rgb), 0.8);
 }
 .btn.btn-primary:hover .fa-arrow-right{
     margin-left: 5px;
@@ -103,10 +126,13 @@ section{
 #home{
     /*background: rgba(255,255,255, .1);*/
 }
+#home .container .home-title{
+  align-items: center;
+}
 #portfolio{
     width: 100%;
     background-size: auto;
-    padding: 0;
+    /* padding: 0; */
 }
 ul#portfolio-flters{
     display: block;
@@ -133,19 +159,19 @@ ul#portfolio-flters{
     font-family:  "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 #portfolio-flters .filter-active{
-    background: #4ca666;
+    background: var(--blitar-green);
     color: white;
   }
 #portfolio-flters li:hover {
-    background: #4ca666;
+    background: var(--blitar-green);
     color: white;
 }
 #portfolio .portfolio-item{
     margin-left: unset;
     margin-right: unset;
-    max-width: 20%;
+    max-width: 12.5%;
     margin-top: 10px;
-    padding: 25px;
+    padding: 15px;
 }
 
 #portfolio .portfolio-item .portfolio-caption{
@@ -153,10 +179,8 @@ ul#portfolio-flters{
     background: rgba(255,255,255,0);
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
-    font-size: 1em;
-    color: #fff;
-
-    display: none;
+    font-size: .7rem;
+    color: rgb(255, 255, 255);
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
     font-size: .8em;
@@ -185,14 +209,26 @@ ul#portfolio-flters{
     }
 
     #mainNav {
-        background: #4ca666;
+        background: var(--blitar-green);
+        padding: 10px 10px;
+    }
+    
+    #mainNav .navbar-brand img{
+      height: 2rem;
     }
     nav a {
         color: #fff;
     }
+    #mainNav .navbar-nav .nav-item .nav-link{
+      color: #fff;
+    }
     #home{
         text-align: center;
     }
+    .home-logo{
+      padding: 30px 0px;
+    }
+    
     .page-section h2{
         font-size: 1.5rem;
     }
@@ -219,6 +255,7 @@ ul#portfolio-flters{
     }
 }
 .info-bt{
+  display: none;
   color: #fff;
   font-size: 1.5em;
 }
@@ -226,13 +263,13 @@ ul#portfolio-flters{
   color: rgba(6, 222, 245, 0.7);
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
-    background: rgba(255,255,255, 0.4);
+    background: rgba(var(--blitar-green-rgb), .45);
 }
 .portfolio-link .img-fluid, .portfolio-link .portfolio-hover{
-    border-radius: 20px;
+    border-radius: 50%;
   }
 .portfolio-link .portfolio-hover{
-    box-shadow: 0px 0px 10px white;
+    box-shadow: 0px 0px 10px var(--blitar-green);
 }
 .back-to-top {
   position: fixed;
@@ -241,7 +278,7 @@ ul#portfolio-flters{
   right: 20px;
   bottom: 20px;
   z-index: 996;
-  background: #cc1616;
+  background: var(--bs-primary);
   width: 40px;
   height: 40px;
   color: #fff;
@@ -253,7 +290,7 @@ ul#portfolio-flters{
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #e72323;
+  background: var(--bs-orange);
   color: #fff;
 }
 .back-to-top.active {
@@ -266,7 +303,7 @@ ul#portfolio-flters{
   font-size: .8em;
 }
 .survey i {
-  font-size: 6em
+  font-size: 6em;
   line-height: 0;
 }
 .survey:hover {
@@ -276,4 +313,21 @@ ul#portfolio-flters{
 .footer{
     bottom: 0;
     color: #fff;
+    background: rgb(var(--blitar-green-rgb));
+}
+a.close{
+  text-decoration: none;
+  color: #aaa;
+  font-size: 1rem;
+}
+a.close:hover{
+  color: #262626;
+  font-weight: bold;
+}
+.modal-header{
+  justify-content: end;
+  border-bottom: none;
+}
+.modal-footer{
+  justify-content: center;
 }
