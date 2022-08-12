@@ -154,12 +154,17 @@ section{
   padding: 50px;
   color: #fff;
   background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.4)), url("../assets/img/bg-portal-2.jpg") fixed center top;
+  background-size: cover;
 }
 #profil-body .profil-item{
   background: #fff;
   padding: 15px;
   border-radius: 10px;
   color: var(--bs-gray-dark);
+  font-size: 1rem;
+}
+#profil-body .profil-item h5{
+  font-size: 1.5rem;
 }
 ul#portfolio-flters{
     display: block;
@@ -193,7 +198,8 @@ ul#portfolio-flters{
     background: var(--bs-primary);
 }
 #portfolio{
-  background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.4)), url("../assets/img/bg-portal.jpg") fixed center center;
+  background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.4)), url("../assets/img/bg-portal.jpg") scroll center center;
+  background-size: cover;
 }
 #portfolio .portfolio-item{
     margin-left: unset;
@@ -232,14 +238,13 @@ ul#portfolio-flters{
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 @media screen and (max-width: 768px) and (orientation: landscape){
-  #portfolio .portfolio-item{
-      max-width: 25%;
-      padding: 12px;
-  }
+    #portfolio .portfolio-item{
+        max-width: 25%;
+        padding: 12px;
+    }
     .sticky-top{
       position: inherit;
     }
-
     #mainNav {
         background: var(--blitar-green);
         padding: 10px 10px;
@@ -254,8 +259,17 @@ ul#portfolio-flters{
     nav a {
         color: #fff;
     }
+    #profil-body{
+      padding: 20px;
+    }
+    #profil-body .profil-item{
+      font-size: .7rem;
+    }
+    #profil-body .profil-item h5{
+      font-size: 1rem;
+    }
 }
-  @media screen and (max-width: 768px) and (orientation: portrait){
+@media screen and (max-width: 768px) and (orientation: portrait){
     .sticky-top{
       position: inherit;
     }
@@ -300,6 +314,12 @@ ul#portfolio-flters{
     #portfolio .portfolio-item{
         max-width: 33.333333%;
         padding: 12px;
+    }
+    #profil-body{
+      padding: 20px;
+    }
+    #profil-body .container{
+      max-width: 100%;
     }
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
