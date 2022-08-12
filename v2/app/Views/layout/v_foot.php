@@ -1,9 +1,18 @@
 
         <footer class="footer py-4">
             <div class="container">
-                <div class=" ">
-                    <div class="col-lg-12 text-center">
-                        Diskominfo Kab Blitar - 2022
+                <div class="row ">
+                    <div class="col-md-4 col-sm-4 left">
+                        <img src="<?=base_url('public')?>/assets/img/logo-kab.png" alt="">
+                        <h6>"Maju Bersama, Sejahtera Bersama"</h6>
+                    </div>
+                    <div class="col-md-4 col-sm-2 mb-4"></div>
+                    <div class="col-md-4 col-sm-6 back">
+                    Pemerintah Kabupaten Blitar<br>
+                    Kantor Sekretariat Daerah Kabupaten Blitar<br>
+                    Jl. Kusuma Bangsa No. 60 Kanigoro Kode Pos 66171 <br>Telp. (0342)801201<br>
+                    E-mail : kabupaten.blitar@blitarkab.go.id<br> 
+                    Website : <a href="https://www.blitarkab.go.id">https://www.blitarkab.go.id</a> <br>
                     </div>
                 </div>
             </div>

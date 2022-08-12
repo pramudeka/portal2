@@ -1,21 +1,19 @@
         <section class="page-section  flex-grow-1" id="home">
             <div class="container">
                 <div class="row home-title">
-                    <div class="col-md-8 col-sm-12 text-white home-logo" style="">
-                        <h3 id="welcome" class="" data-aos="fade-right" data-aos-duration="5000">Selamat Datang Di</h3>
+                    <div class="col-md-12 text-white home-logo text-center" style="">
+                        <h3 id="welcome" class="" style="margin-top:100px" data-aos="fade-right" data-aos-duration="5000">Selamat Datang Di</h3>
                         <h2 class=" text-uppercase" style="color: var(--bs-primary); font-size: 2.5rem" data-aos="fade-right" data-aos-duration="5000" data-aos-delay="200" data-aos-anchor="#welcome">Mall Pelayanan Publik</h2>
                         <h2 class=" text-uppercase" data-aos="fade-right" data-aos-duration="5000" data-aos-delay="500" data-aos-anchor="#welcome">Kabupaten Blitar</h2>
                         
-                        <a class="btn btn-primary home" href="<?=base_url('layanan')?>" data-aos="fade-up" data-aos-duration="5000" data-aos-delay="800" data-aos-anchor="#welcome">Mulai <i class="fa-solid fa-arrow-right"></i></a>
-                    </div>
-                    <div class="col-md-4 col-sm-12 text-white home-logo">
-                        <div class="text-center" data-aos="zoom-in" data-aos-duration="5000" data-aos-delay="0" style="padding-left: 60px;padding-right: 60px" >
-                            <embed class="" src="<?=base_url('public/assets/img')?>/logo-circle.svg" alt="Logo"></embed>
-                        </div>
-                        <div class="text-center quote">
-                        <h3 class="section-subheading">"Maju Bersama, Sejahtera Bersama"</h3>
+                        <div class="mb-4"></div>
+                            <div style="width: 250px;margin:0px auto">
+                                <img src="<?=base_url('public/assets/img')?>/logo-circle.svg" alt="" data-aos="zoom-in" data-aos-duration="5000" data-aos-delay="1000" data-aos-anchor="#mulai">
+                                <a id="mulai" class="btn btn-primary home" style="position: relative; top: -175px;" href="<?=base_url('layanan')?>" data-aos="zoom-in" data-aos-duration="5000" data-aos-delay="800" >Mulai</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        

@@ -74,6 +74,7 @@
       let button = $(event.relatedTarget); // Button that triggered the modal
       let id = button.attr('id'); 
       let desc = $('#'+id+' img').attr('alt').split(' | ')
+      console.log(desc)
       $('.modal-body h5').text(desc[0])
       $('.modal-body p').text(desc[1])
       $('.btn-go').attr('href',button.attr('href'))

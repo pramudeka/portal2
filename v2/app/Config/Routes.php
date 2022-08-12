@@ -20,7 +20,10 @@ $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('Home');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
-$routes->set404Override();
+$routes->set404Override(function ()
+{
+    return view('layout/errors/404');
+});
 // The Auto Routing (Legacy) is very dangerous. It is easy to create vulnerable apps
 // where controller filters or CSRF protection are bypassed.
 // If you don't want to define all routes, please use the Auto Routing (Improved).
@@ -38,6 +41,9 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 $routes->get('/layanan', 'Home::layanan');
 $routes->get('/profil', 'Home::profil');
+$routes->get('/berita', 'Home::berita');
+$routes->get('/lapor', 'Home::lapor');
+$routes->get('/faq', 'Home::faq');
 
 /*
  * --------------------------------------------------------------------
