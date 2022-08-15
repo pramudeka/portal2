@@ -5,7 +5,7 @@ body {
   background: var(--blitar-green);
 }
 body.main{
-  background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.4)), url("../assets/img/bg-portal.jpg") scroll center top;
+  background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.4)), url("../assets/img/bg-portal.jpg") fixed center top;
   background-size: cover;
 }
 body.side{
@@ -30,7 +30,7 @@ body.side{
   margin-top: 2rem;
 }
 .kat{
-    padding: 50px 0px;
+    padding: 25px 0px;
     background: #fff;
     /*margin-bottom: 50px;*/
 }
@@ -198,7 +198,7 @@ ul#portfolio-flters{
     background: var(--bs-primary);
 }
 #portfolio{
-  background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.4)), url("../assets/img/bg-portal.jpg") scroll center center;
+  background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.4)), url("../assets/img/bg-portal.jpg") fixed center top;
   background-size: cover;
 }
 #portfolio .portfolio-item{
@@ -219,6 +219,21 @@ ul#portfolio-flters{
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
     font-size: .8em;
     color: #aaa;
+}
+#berita-body{
+  background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.4)), url("../assets/img/bg-portal-2.jpg") fixed center top;
+  background-size: cover;
+}
+#lapor-body{
+  background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.4)), url("../assets/img/bg-portal.jpg") fixed center top;
+  background-size: cover;
+}
+#faq-body{
+  background: linear-gradient(rgba(0,0,0, 0.4), rgba(0,0,0, 0.4)), url("../assets/img/bg-portal-2.jpg") fixed center top;
+  background-size: cover;
+}
+#notfound{
+  background: linear-gradient(rgba(var(--blitar-green-rgb), 1), rgba(255, 255, 255, 1)),#fff;
 }
 .popover{
   background: rgba(0,0,0,0);
@@ -321,6 +336,12 @@ ul#portfolio-flters{
     #profil-body .container{
       max-width: 100%;
     }
+  #profil-body .profil-item{
+    font-size: .7rem;
+  }
+  #profil-body .profil-item h5{
+    font-size: 1rem;
+  }
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
     background: rgba(var(--blitar-green-rgb), .45);

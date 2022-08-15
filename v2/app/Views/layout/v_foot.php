@@ -10,7 +10,7 @@
                     <div class="col-md-4 col-sm-6 back">
                     Pemerintah Kabupaten Blitar<br>
                     Kantor Sekretariat Daerah Kabupaten Blitar<br>
-                    Jl. Kusuma Bangsa No. 60 Kanigoro Kode Pos 66171 <br>Telp. (0342)801201<br>
+                    Jl. Kusuma Bangsa No. 60 Kanigoro Kode Pos 66171 <br>Telp. (0342) 801201<br>
                     E-mail : kabupaten.blitar@blitarkab.go.id<br> 
                     Website : <a href="https://www.blitarkab.go.id">https://www.blitarkab.go.id</a> <br>
                     </div>

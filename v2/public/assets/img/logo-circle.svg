@@ -1,56 +1,59 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 546.7 546.7">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 546.7 546.7">
 <defs>
-<style>.cls-1,.cls-2,.cls-3{
-	transform-origin: center center;
-	fill:none;
-	stroke-miterlimit:10;
-	stroke:#fff;
-	}
-	.cls-1{
-		stroke-width:10px;
-		stroke-dasharray:89.1 89.1;
-		}
-		.cls-2{
-			stroke-width:15px;
-			stroke-dasharray:184.12 184.12;
-			stroke:#ffc800;
-			}
-			.cls-3{
-				stroke-width:5px;
-				stroke-dasharray:330.27 330.27;
-				
-				}
-
-.cls-1{
-	animation:  rot 5s ease-in-out infinite alternate;
-	animation-delay: 1.2s
-}
-.cls-2{
-	animation:  rotneg 5s ease-in-out infinite alternate;
-	animation-delay: .6s
-
-}
-.cls-3{
-	animation:  rot 5s ease-in-out infinite alternate;
-
-}
-
+<style>
+	.cls-1,.cls-2,.cls-3,.cls-4{
+    transform-origin: center center;
+    }
+    .cls-1
+    {
+    stroke: #fff;
+    stroke-width:10px;
+    stroke-dasharray:222.75 222.75;
+    animation:  rotneg 5s ease-in-out infinite alternate;
+    animation-delay: .5s;
+    }
+    .cls-2
+    {
+    stroke: #4ca666;
+    stroke-dasharray:163.9 163.9;
+    stroke-width:20px;
+    animation:  rot 5s ease-in-out infinite alternate;
+    animation-delay: .8s;
+    }
+    .cls-3
+    {
+    stroke: #fff;
+    stroke-dasharray:303.89 303.89;
+    stroke-width:15px;
+    animation:  rotneg 5s ease-in-out infinite alternate;
+    animation-delay: 1.6s;
+    }
+    .cls-4
+    {
+    stroke: #ffc800;
+    stroke-dasharray:215.6 215.6;
+    stroke-width:10px;
+    animation:  rot 5s ease-in-out infinite alternate;
+    animation-delay: 2.5s;
+    }
+    
+    
 @keyframes rot{
 	100%{
-		transform: rotate(360deg) scale(1.2);
+		transform: rotate(360deg) ;
 	}
 }
 @keyframes rotneg{
 	100%{
-		transform: rotate(-360deg) scale(1.2);
+		transform: rotate(-360deg) ;
 	}
 }
 </style>
 </defs>
 <g id="Layer_4" data-name="Layer 4">
-<circle class="cls-1" cx="273.35" cy="273.35" r="141.8"/>
-<circle class="cls-2" cx="273.35" cy="273.35" r="175.81"/>
-<circle class="cls-3" cx="273.35" cy="273.35" r="210.25"/>
-
+<circle class="cls-1" cx="272.5" cy="272.5" r="136" fill="none"/>
+<circle class="cls-2" cx="272.5" cy="272.5" r="150" fill="none"/>
+<circle class="cls-3" cx="272.5" cy="272.5" r="198" fill="none"/>
+<circle class="cls-4" cx="272.5" cy="272.5" r="210" fill="none"/>
 </g>
 </svg>

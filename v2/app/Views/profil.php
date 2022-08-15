@@ -1,4 +1,4 @@
-<section class="page-section  flex-grow-1" id="profil">
+<section class="page-section" id="profil">
     <div class="kat text-center">
         <h3 id="title" class="section-heading" data-aos="fade-down" data-aos-duration="500">Profil Kabupaten Blitar</h3>
     </div>

@@ -36,7 +36,7 @@ class Home extends BaseController
     {
         $data=[
                 'isi' => 'faq',
-                'back' => 'side',
+                'back' => 'none',
                 'menu' => 'faq',
             ];
         return view('layout/v_wrapper',$data);
@@ -45,7 +45,7 @@ class Home extends BaseController
     {
         $data=[
                 'isi' => 'berita',
-                'back' => 'side',
+                'back' => 'none',
                 'menu' => 'berita',
             ];
         return view('layout/v_wrapper',$data);
@@ -54,7 +54,7 @@ class Home extends BaseController
     {
         $data=[
                 'isi' => 'lapor',
-                'back' => 'main',
+                'back' => 'none',
                 'menu' => 'lapor',
             ];
         return view('layout/v_wrapper',$data);

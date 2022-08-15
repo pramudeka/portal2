@@ -6,12 +6,12 @@
                 </a>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link <?=$menu=='home'?'active':''?>" href="<?=base_url('')?>">Home</a></li>
-                        <li class="nav-item"><a class="nav-link <?=$menu=='layanan'?'active':''?>" href="<?=base_url('layanan')?>">Layanan</a></li>
-                        <li class="nav-item"><a class="nav-link <?=$menu=='profil'?'active':''?>" href="<?=base_url('profil')?>">Profil</a></li>
-                        <li class="nav-item"><a class="nav-link <?=$menu=='berita'?'active':''?>" href="<?=base_url('berita')?>">Berita</a></li>
-                        <li class="nav-item"><a class="nav-link <?=$menu=='lapor'?'active':''?>" href="<?=base_url('lapor')?>">Saran &amp; Aduan</a></li>
-                        <li class="nav-item"><a class="nav-link <?=$menu=='faq'?'active':''?>" href="<?=base_url('faq')?>">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link <?=isset($menu)&&$menu=='home'?'active':''?>" href="<?=base_url('')?>">Home</a></li>
+                        <li class="nav-item"><a class="nav-link <?=isset($menu)&&$menu=='layanan'?'active':''?>" href="<?=base_url('layanan')?>">Layanan</a></li>
+                        <li class="nav-item"><a class="nav-link <?=isset($menu)&&$menu=='profil'?'active':''?>" href="<?=base_url('profil')?>">Profil</a></li>
+                        <li class="nav-item"><a class="nav-link <?=isset($menu)&&$menu=='berita'?'active':''?>" href="<?=base_url('berita')?>">Berita</a></li>
+                        <li class="nav-item"><a class="nav-link <?=isset($menu)&&$menu=='lapor'?'active':''?>" href="<?=base_url('lapor')?>">Saran &amp; Aduan</a></li>
+                        <li class="nav-item"><a class="nav-link <?=isset($menu)&&$menu=='faq'?'active':''?>" href="<?=base_url('faq')?>">FAQ</a></li>
                         <li class="nav-item"><a class="nav-link saran" style="" href="https://forms.gle/KffbGtNErNEv9tvN8"><i class="fa-solid fa-comment-dots"></i> Kuesioner</a></li>
                     </ul>
                 </div>

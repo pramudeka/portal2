@@ -1,6 +1,6 @@
 
         <!-- Portfolio Grid-->
-        <section class="page-section  flex-grow-1" id="portfolio">
+        <section class="page-section" id="portfolio">
             <div class=" kat text-center" >
                 <h3 id="kategori" class="section-heading" data-aos="fade-down" data-aos-duration="1000">Kategori</h3>
                 <ul id="portfolio-flters" class="text-center" data-aos="fade-right" data-aos-duration="1000" data-aos-anchor="#kategori">
